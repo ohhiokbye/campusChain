@@ -1,0 +1,40 @@
+{
+  "name": "campus-chain",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An auditable campus resource booking course project",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "chain": "hardhat --network node node --hostname 127.0.0.1",
+    "compile": "node scripts/compile.mjs",
+    "deploy": "node scripts/deploy.mjs",
+    "web": "vite --host 127.0.0.1",
+    "build": "npm run compile && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test --experimental-test-isolation=none test/*.test.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:e2e": "playwright test",
+    "benchmark": "node scripts/benchmark.mjs"
+  },
+  "overrides": {
+    "solc": {
+      "tmp": "0.2.7"
+    }
+  },
+  "dependencies": {
+    "ethers": "6.17.0",
+    "lucide-react": "1.52.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "hardhat": "3.18.1",
+    "prettier": "3.9.9",
+    "solc": "0.8.37",
+    "vite": "8.3.2"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+artifacts/
+cache/
+coverage/
+playwright-report/
+test-results/
+public/deployment*.json
+.env
+*.log
+
+docs/*.md
